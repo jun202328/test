@@ -1,14 +1,14 @@
-#startimg{
-    width: 600px;
-    height: 600px;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
+#startimg {
+  width: 600px;
+  height: 600px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
-.start{
-    display: flex;
-    flex-direction: column;
+.start {
+  display: flex;
+  flex-direction: column;
 }
 
 /* .page-header {
@@ -16,33 +16,31 @@
     justify-content: space-between;
 } */
 
-    
-article{
-    display: flex;
-    flex-direction: column;
+article {
+  display: flex;
+  flex-direction: column;
 }
 
-.question{
-    display: none;
+.question {
+  display: none;
 }
 
-.result{
-    display: none;
+.result {
+  display: none;
 }
 .progress-bar {
-    background-color: #31b52a
+  background-color: #31b52a;
 }
 .progress {
-    background-color: #000000;
+  background-color: #000000;
 }
 
-#img{
-    width: 400px;
-    height: 900px;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    
+#img {
+  width: 400px;
+  height: 900px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 /* #img_main{
@@ -53,150 +51,159 @@ article{
     margin: 0 auto;
 } */
 
-.at-share-btn-elements{
-        text-align: center;
-    }
-.share{
-    margin: 0 auto;
+.at-share-btn-elements {
+  text-align: center;
+}
+.share {
+  margin: 0 auto;
 }
 
-.kakao_ad{
-    width: 320px;
-    margin: 0 auto;
+.kakao_ad {
+  width: 320px;
+  margin: 0 auto;
 }
 
-.kakao_ad2{
-    width: 320px;
-    margin: 0 auto;
+.kakao_ad2 {
+  width: 320px;
+  margin: 0 auto;
 }
 /* .coupang_ad {
     width: 320px;
     margin: 0 auto;
-} */ */
-
-.page{
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
+} */
+*/ .page {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 디벨롭들 */
 
 #show-result {
-    background-color: rgb(33, 33, 33);
-    height: 200px;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: rgb(33, 33, 33);
+  height: 200px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /* 블로그 */
 
 p {
-    text-align: center;
-  }
+  text-align: center;
+}
 
-  header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    flex-direction: row;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
 }
 
 li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .title {
-    font-family: Arial, sans-serif;
-    font-size: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
 }
 
 .nav-menu li a {
-    display: inline-block;
-    
-    margin-right: 35px;
-    margin-left: 35px;
-    font-size: 24px;
-    font-family: Arial, sans-serif;
-    color: #2e2a80;
-    text-decoration: none;
+  display: inline-block;
+
+  margin-right: 35px;
+  margin-left: 35px;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  color: #2e2a80;
+  text-decoration: none;
 }
 
-.post h2 a{
-    margin-right: 20px;
-    font-size: 24px;
-    font-family: Arial, sans-serif;
-    color: #2e2a80;
-    text-decoration: none;
+.post h2 a {
+  margin-right: 20px;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  color: #2e2a80;
+  text-decoration: none;
 }
-
 
 /* 이동버튼 */
 
 #reset {
-    width: 200px;
-    margin: 0 auto;
-    background-color: rgb(33, 33, 33);
-    border: none;
-  }
+  width: 200px;
+  margin: 0 auto;
+  background-color: rgb(33, 33, 33);
+  border: none;
+}
 
-  #go-to-main {
-    width: 200px;
-    margin: 0 auto;
-    background-color: rgb(33, 33, 33);
-    border: none;
-  }
+#go-to-main {
+  width: 200px;
+  margin: 0 auto;
+  background-color: rgb(33, 33, 33);
+  border: none;
+}
 
-  /* 0419추가 */
+/* 0419추가 */
 
-  #countdown-wrapper {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    font-size: 36px;
-    color: #000;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  #countdown {
-    font-weight: bold;
-  }
-  
-  #img {
-    display: none;
-  }
-  
+#countdown-wrapper {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 36px;
+  color: #000;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
-  
-  
+#countdown {
+  font-weight: bold;
+}
 
+#img {
+  display: none;
+}
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
+/**
+ * Result Coupang Banner 
+ * commit hash :
+ * author : yunkukpark
+ */
+.result-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.result-banner .close-btn {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+}
+
+.result-banner .close-btn.show {
+  display: block;
+}

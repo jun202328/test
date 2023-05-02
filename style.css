@@ -28,6 +28,7 @@ article {
 .result {
   display: none;
 }
+
 .progress-bar {
   background-color: #31b52a;
 }
@@ -41,6 +42,10 @@ article {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
+}
+
+#img.show {
+  display: block;
 }
 
 /* #img_main{

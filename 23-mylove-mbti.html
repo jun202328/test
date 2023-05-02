@@ -170,40 +170,6 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      // document.getElementById('img').style.display = 'none';
-
-      // let lastClickedTime = localStorage.getItem("lastClickedTime");
-      // if (lastClickedTime === null) {
-      //  lastClickedTime = 0;
-      // }
-
-      // const currentTime = Date.now();
-      // let elapsedTime = currentTime - lastClickedTime;
-
-      // if (elapsedTime < 86400000) {
-      // document.getElementById('show-result').style.display = 'none';
-      // document.getElementById('img').style.display = 'block';
-
-      // setTimeout(function() {
-      // document.getElementById('show-result').style.display = 'block';
-      // }, 86400000 - elapsedTime);
-      // } else {
-      // document.getElementById('show-result').style.display = 'block';
-      // document.getElementById('img').style.display = 'none';
-      // }
-
-      // document.getElementById('show-result').addEventListener('click', function() {
-      // document.getElementById('img').style.display = 'block';
-      // const newWindow = window.open('https://link.coupang.com/a/POTvM', '_blank', 'noopener,noreferrer');
-      // document.getElementById('show-result').style.display = 'none';
-
-      // localStorage.setItem("lastClickedTime", Date.now());
-
-      // setTimeout(function() {
-      // document.getElementById('show-result').style.display = 'block';
-      // }, 86400000);
-      // });
-
       var num = 1;
       var q = {
         1: {
@@ -300,6 +266,7 @@
         ISTJ: { img: '23_img/istj.jpg' },
         ISTP: { img: '23_img/istp.jpg' },
       };
+
       function start() {
         $('.start').hide();
         $('.question').show();
@@ -324,6 +291,10 @@
           $('#TF').val() < 2 ? (mbti += 'F') : (mbti += 'T');
           $('#JP').val() < 2 ? (mbti += 'P') : (mbti += 'J');
           $('#img').attr('src', result[mbti]['img']);
+          $('#img').attr('alt', mbti);
+          if (localStorage.getItem('adSession') ?? null) {
+            $('#img').attr('class', 'show');
+          }
           $('#animal').html(result[mbti]['animal']);
           $('#explain').html(result[mbti]['explain']);
         } else {

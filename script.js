@@ -1,5 +1,8 @@
+var adSession = localStorage?.getItem('adSession') ?? null;
+
 // DOM
 const coupangBanner = document.querySelector('.result-banner');
+const resultImage = document.querySelector('#img');
 const closeBtn = document.querySelector('.close-btn');
 
 // Constants
@@ -7,7 +10,6 @@ const MINUTE_FOR_TEST = 1000 * 60;
 const HOUR = 1000 * 60 * 60;
 const DAY = HOUR * 24;
 
-const adSession = localStorage?.getItem('adSession') ?? null;
 const shouldShowAd = adSession === null || Date.now() - adSession > DAY;
 
 const adBannerObserver = new IntersectionObserver(([{ isIntersecting }]) => {
@@ -23,6 +25,10 @@ closeBtn.addEventListener('click', onCloseBtnClick);
 document.addEventListener('DOMContentLoaded', onMount);
 
 // Util functions for handle ad banner
+function showResultImage() {
+  resultImage.classList.add('show');
+}
+
 function onMount() {
   if (shouldShowAd) {
     coupangBanner.classList.add('show');
@@ -32,6 +38,7 @@ function onMount() {
 function onCloseBtnClick(e) {
   coupangBanner.classList.remove('show');
   localStorage.setItem('adSession', Date.now());
+  showResultImage();
 }
 
 function onCount(count) {

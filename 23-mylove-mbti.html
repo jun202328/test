@@ -1,210 +1,317 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
+  <head>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1045452172414070"
+      crossorigin="anonymous"
+    ></script>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1045452172414070"
-    crossorigin="anonymous"></script>
-    
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>나 이런거 좋아하네 테스트</title>
-    <meta name="description" content="어! 나 이런거 좋아하네? MBTI ver">
-    <meta name="keywords" content="나이런거좋아하네테스트, 테스트펀, testfun, mbti, 심리테스트, mbti테스트">
-    <meta property="og:type" content="website"> 
-    <meta property="og:title" content="나이런거좋아하네테스트">
-    <meta property="og:description" content="어! 나 이런거 좋아하네? MBTI ver">
-    <meta property="og:image" content="23_img/main23.jpg">
-    <meta property="og:url" content="https://test-fun.com/23-mylove-mbti.html">
+    <meta name="description" content="어! 나 이런거 좋아하네? MBTI ver" />
+    <meta
+      name="keywords"
+      content="나이런거좋아하네테스트, 테스트펀, testfun, mbti, 심리테스트, mbti테스트"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="나이런거좋아하네테스트" />
+    <meta
+      property="og:description"
+      content="어! 나 이런거 좋아하네? MBTI ver"
+    />
+    <meta property="og:image" content="23_img/main23.jpg" />
+    <meta
+      property="og:url"
+      content="https://test-fun.com/23-mylove-mbti.html"
+    />
 
-    <link rel="icon" type="img" href="favicon.png">
+    <link rel="icon" type="img" href="favicon.png" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LHE53NLPV8"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LHE53NLPV8"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    
-    gtag('config', 'G-LHE53NLPV8');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-LHE53NLPV8');
     </script>
-
-</head>
-<body class="container" style="background-color:#ffffff">
-
-    <div style="text-align: center;">
-        <a href="test-fun.html"><img class="logo" src="logo.png" alt="test fun" width="100"></a>
+  </head>
+  <body class="container" style="background-color: #ffffff">
+    <div style="text-align: center">
+      <a href="test-fun.html"
+        ><img class="logo" src="logo.png" alt="test fun" width="100"
+      /></a>
     </div>
 
     <article class="kakao_ad mt-5">
-        <ins class="kakao_ad_area" style="display:none;"
-        data-ad-unit = "DAN-eYkPQc6p8rC9Z55W"
-        data-ad-width = "320"
-        data-ad-height = "100"></ins>
-        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+      <ins
+        class="kakao_ad_area"
+        style="display: none"
+        data-ad-unit="DAN-eYkPQc6p8rC9Z55W"
+        data-ad-width="320"
+        data-ad-height="100"
+      ></ins>
+      <script
+        type="text/javascript"
+        src="//t1.daumcdn.net/kas/static/ba.min.js"
+        async
+      ></script>
     </article>
 
     <article class="start">
-        <img id="startimg" src="23_img/main23.jpg">
-            <button type="button" class="btn btn-primary mt-5" onclick='start();' style="background-color:#000000; border-color:#000000")>테스트 시작하기</button>
+      <img id="startimg" src="23_img/main23.jpg" />
+      <button
+        type="button"
+        class="btn btn-primary mt-5"
+        onclick="start();"
+        style="background-color: #000000; border-color: #000000"
+        )
+      >
+        테스트 시작하기
+      </button>
     </article>
 
     <article class="question">
-        <div class="progress mt-5">
-            <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)"></div>
-        </div>
-        <h2 id="title" class="text-center mt-5" style="font-size: 18pt">문제</h2>
-        <input id="type" type="hidden" value="EI">
-        <button id="A" type="button" class="btn btn-dark mt-5">Dark</button>
-        <button id="B" type="button" class="btn btn-dark mt-5">Dark</button>
+      <div class="progress mt-5">
+        <div
+          class="progress-bar"
+          role="progressbar"
+          style="width: calc(100 / 12 * 1%)"
+        ></div>
+      </div>
+      <h2 id="title" class="text-center mt-5" style="font-size: 18pt">문제</h2>
+      <input id="type" type="hidden" value="EI" />
+      <button id="A" type="button" class="btn btn-dark mt-5">Dark</button>
+      <button id="B" type="button" class="btn btn-dark mt-5">Dark</button>
     </article>
 
     <article class="result">
-        <img id="img" src="" alt="MBTI 결과">
-        <!-- <button id="show-result">쿠팡 보고 결과 보기 <br>
-            *원치 않을 경우 뒤로 가기를 눌러주세요*
-        </button> -->
+      <img id="img" src="" alt="MBTI 결과" />
+      <div id="show-result" class="result-banner">
+        <button class="close-btn">X</button>
+        쿠팡 보고 결과 보기 <br />
+        *원치 않을 경우 뒤로 가기를 눌러주세요*
+      </div>
 
-        <p >* 이 포스팅은 쿠팡 파트너스 활동의 일환으로,<br>
-        이에 따른 일정액의 수수료를 제공받습니다.</p> 
-                
-                <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                <div class="share addthis_inline_share_toolbox mt-5"></div>
+      <p>
+        * 이 포스팅은 쿠팡 파트너스 활동의 일환으로,<br />
+        이에 따른 일정액의 수수료를 제공받습니다.
+      </p>
 
-                <button id="reset" type="button" class="btn btn-primary mt-5" onclick='location.reload();'>다시하기</button>
-                <button id="go-to-main" type="button" class="btn btn-primary mt-3" onclick='location.href="test-fun.html";'>다른 테스트 하기</button>
-            
+      <!-- Go to www.addthis.com/dashboard to customize your tools -->
+      <div class="share addthis_inline_share_toolbox mt-5"></div>
+
+      <button
+        id="reset"
+        type="button"
+        class="btn btn-primary mt-5"
+        onclick="location.reload();"
+      >
+        다시하기
+      </button>
+      <button
+        id="go-to-main"
+        type="button"
+        class="btn btn-primary mt-3"
+        onclick='location.href="test-fun.html";'
+      >
+        다른 테스트 하기
+      </button>
     </article>
 
     <article class="kakao_ad2 mt-5">
-        <ins class="kakao_ad_area" style="display:none;"
-        data-ad-unit = "DAN-OK00GVstG4knRekt"
-        data-ad-width = "320"
-        data-ad-height = "100"></ins>
-        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+      <ins
+        class="kakao_ad_area"
+        style="display: none"
+        data-ad-unit="DAN-OK00GVstG4knRekt"
+        data-ad-width="320"
+        data-ad-height="100"
+      ></ins>
+      <script
+        type="text/javascript"
+        src="//t1.daumcdn.net/kas/static/ba.min.js"
+        async
+      ></script>
     </article>
 
     <!-- <article class="coupang_ad mt-3">
         <a href="https://link.coupang.com/a/OYetM" target="_blank" referrerpolicy="unsafe-url"><img src="https://ads-partners.coupang.com/banners/638442?subId=&traceId=V0-301-bae0f72e5e59e45f-I638442&w=320&h=100" alt=""></a> -->
 
-    <input type="hidden" id="EI" value="0">
-    <input type="hidden" id="SN" value="0">
-    <input type="hidden" id="TF" value="0">
-    <input type="hidden" id="JP" value="0">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <input type="hidden" id="EI" value="0" />
+    <input type="hidden" id="SN" value="0" />
+    <input type="hidden" id="TF" value="0" />
+    <input type="hidden" id="JP" value="0" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
     <script>
+      var num = 1;
+      var q = {
+        1: {
+          title: '새벽에 전 애인에게 문자가 왔다면?',
+          type: 'EI',
+          A: '문자 내용을 읽고 전화한다',
+          B: '문자 내용을 읽으며 의도를 파악한다',
+        },
+        2: {
+          title: '문자에 오타가 많다면?',
+          type: 'EI',
+          A: '뭐야 술 마셨나?',
+          B: '장난치는건가?',
+        },
+        3: {
+          title: '보고싶어…라고 문자가 온다면?',
+          type: 'EI',
+          A: '뭐야 왜이래? 읽씹한다',
+          B: '이전 문자 내용을 보며 맥락을 파악한다',
+        },
+        4: {
+          title: '내일 아침에 중요한 약속이 있다면?',
+          type: 'SN',
+          A: '평소 자는 시간에 잔다',
+          B: '평소보다 일찍 잔다',
+        },
+        5: {
+          title: '전 애인이 새벽에 만나자고 한다면?',
+          type: 'SN',
+          A: '새벽은 좀... 안 나간다',
+          B: '그 사람과의 추억을 생각하며 일단 나간다',
+        },
+        6: {
+          title: '연인이 나에게 잘못을 했다면?',
+          type: 'SN',
+          A: '그러지말라고 바로 말한다',
+          B: '왜 그랬는지 생각해본다',
+        },
+        7: {
+          title: '친구가 깜짝 선물을 줬다면?',
+          type: 'TF',
+          A: '먼저 무슨 선물인지 확인한다',
+          B: '와 너무 고마워 ㅠㅠ 갑자기 뭐야?',
+        },
+        8: {
+          title: '친구가 우울해 하고 있다면?',
+          type: 'TF',
+          A: '친구를 기분좋게 할 방법을 찾는다',
+          B: '친구의 이야기를 들어준다',
+        },
+        9: {
+          title: '열심히 작업한 파일이 날라간다면?',
+          type: 'TF',
+          A: '한숨 한번 쉬고 다시 묵묵히 작업한다',
+          B: '주변사람에게 이 사실을 알린다',
+        },
+        10: {
+          title: '갑작스럽게 계획이 틀어지면?',
+          type: 'JP',
+          A: '이럴 줄 알고 추가 계획을 준비했지',
+          B: '역시 인생은 계획대로 안되는구나!',
+        },
+        11: {
+          title: '친구가 갑자기 놀러온다고 한다면?',
+          type: 'JP',
+          A: '집청소를 해야되니 천천히 오라고 한다',
+          B: '오키 올때 메로나',
+        },
+        12: {
+          title: '친구와 가기로 한 맛집이 닫혀있다면?',
+          type: 'JP',
+          A: '근처에 있는 다른 맛집을 검색해본다',
+          B: '눈에 보이는 음식점에 들어간다',
+        },
+      };
+      var result = {
+        ENFJ: { img: '23_img/enfj.jpg' },
+        ENFP: { img: '23_img/enfp.jpg' },
+        ENTJ: { img: '23_img/entj.jpg' },
+        ENTP: { img: '23_img/entp.jpg' },
 
-        // document.getElementById('img').style.display = 'none';
+        ESFJ: { img: '23_img/esfj.jpg' },
+        ESFP: { img: '23_img/esfp.jpg' },
+        ESTJ: { img: '23_img/estj.jpg' },
+        ESTP: { img: '23_img/estp.jpg' },
 
-        // let lastClickedTime = localStorage.getItem("lastClickedTime");
-        // if (lastClickedTime === null) {
-        //  lastClickedTime = 0;
-        // }
+        INFJ: { img: '23_img/infj.jpg' },
+        INFP: { img: '23_img/infp.jpg' },
+        INTJ: { img: '23_img/intj.jpg' },
+        INTP: { img: '23_img/intp.jpg' },
 
-        // const currentTime = Date.now();
-        // let elapsedTime = currentTime - lastClickedTime;
+        ISFJ: { img: '23_img/isfj.jpg' },
+        ISFP: { img: '23_img/isfp.jpg' },
+        ISTJ: { img: '23_img/istj.jpg' },
+        ISTP: { img: '23_img/istp.jpg' },
+      };
 
-        // if (elapsedTime < 86400000) {
-        // document.getElementById('show-result').style.display = 'none';
-        // document.getElementById('img').style.display = 'block';
-
-        // setTimeout(function() {
-        // document.getElementById('show-result').style.display = 'block';
-        // }, 86400000 - elapsedTime);
-        // } else {
-        // document.getElementById('show-result').style.display = 'block';
-        // document.getElementById('img').style.display = 'none';
-        // }
-
-        // document.getElementById('show-result').addEventListener('click', function() {
-        // document.getElementById('img').style.display = 'block';
-        // const newWindow = window.open('https://link.coupang.com/a/POTvM', '_blank', 'noopener,noreferrer');
-        // document.getElementById('show-result').style.display = 'none';
-
-        // localStorage.setItem("lastClickedTime", Date.now());
-
-        // setTimeout(function() {
-        // document.getElementById('show-result').style.display = 'block';
-        // }, 86400000);
-        // });
-        
-        var num = 1;
-        var q = {
-            1: {"title": "새벽에 전 애인에게 문자가 왔다면?", "type": "EI", "A": "문자 내용을 읽고 전화한다", "B": "문자 내용을 읽으며 의도를 파악한다"},
-            2: {"title": "문자에 오타가 많다면?", "type": "EI", "A": "뭐야 술 마셨나?", "B": "장난치는건가?"},
-            3: {"title": "보고싶어…라고 문자가 온다면?", "type": "EI", "A": "뭐야 왜이래? 읽씹한다", "B": "이전 문자 내용을 보며 맥락을 파악한다"},
-            4: {"title": "내일 아침에 중요한 약속이 있다면?", "type": "SN", "A": "평소 자는 시간에 잔다", "B": "평소보다 일찍 잔다"},
-            5: {"title": "전 애인이 새벽에 만나자고 한다면?", "type": "SN", "A": "새벽은 좀... 안 나간다", "B": "그 사람과의 추억을 생각하며 일단 나간다"},
-            6: {"title": "연인이 나에게 잘못을 했다면?", "type": "SN", "A": "그러지말라고 바로 말한다", "B": "왜 그랬는지 생각해본다"},
-            7: {"title": "친구가 깜짝 선물을 줬다면?", "type": "TF", "A": "먼저 무슨 선물인지 확인한다", "B": "와 너무 고마워 ㅠㅠ 갑자기 뭐야?"},
-            8: {"title": "친구가 우울해 하고 있다면?", "type": "TF", "A": "친구를 기분좋게 할 방법을 찾는다", "B": "친구의 이야기를 들어준다"},
-            9: {"title": "열심히 작업한 파일이 날라간다면?", "type": "TF", "A": "한숨 한번 쉬고 다시 묵묵히 작업한다", "B": "주변사람에게 이 사실을 알린다"},
-            10: {"title": "갑작스럽게 계획이 틀어지면?", "type": "JP", "A": "이럴 줄 알고 추가 계획을 준비했지", "B": "역시 인생은 계획대로 안되는구나!"},
-            11: {"title": "친구가 갑자기 놀러온다고 한다면?", "type": "JP", "A": "집청소를 해야되니 천천히 오라고 한다", "B": "오키 올때 메로나"},
-            12: {"title": "친구와 가기로 한 맛집이 닫혀있다면?", "type": "JP", "A": "근처에 있는 다른 맛집을 검색해본다", "B": "눈에 보이는 음식점에 들어간다"}
+      function start() {
+        $('.start').hide();
+        $('.question').show();
+        next();
+      }
+      $('#A').click(function () {
+        var type = $('#type').val();
+        var prevalue = $('#' + type).val();
+        $('#' + type).val(parseInt(prevalue) + 1);
+        next();
+      });
+      $('#B').click(function () {
+        next();
+      });
+      function next() {
+        if (num == 13) {
+          $('.question').hide();
+          $('.result').show();
+          var mbti = '';
+          $('#EI').val() < 2 ? (mbti += 'I') : (mbti += 'E');
+          $('#SN').val() < 2 ? (mbti += 'N') : (mbti += 'S');
+          $('#TF').val() < 2 ? (mbti += 'F') : (mbti += 'T');
+          $('#JP').val() < 2 ? (mbti += 'P') : (mbti += 'J');
+          $('#img').attr('src', result[mbti]['img']);
+          $('#img').attr('alt', mbti);
+          if (localStorage.getItem('adSession') ?? null) {
+            $('#img').attr('class', 'show');
+          }
+          $('#animal').html(result[mbti]['animal']);
+          $('#explain').html(result[mbti]['explain']);
+        } else {
+          $('.progress-bar').attr('style', 'width: calc(100/12*' + num + '%)');
+          $('#title').html(q[num]['title']);
+          $('#type').val(q[num]['type']);
+          $('#A').html(q[num]['A']);
+          $('#B').html(q[num]['B']);
+          num++;
         }
-        var result = {
-            "ENFJ": {"img": "23_img/enfj.jpg"},
-            "ENFP": {"img": "23_img/enfp.jpg"},
-            "ENTJ": {"img": "23_img/entj.jpg"},
-            "ENTP": {"img": "23_img/entp.jpg"},
-        
-            "ESFJ": {"img": "23_img/esfj.jpg"},
-            "ESFP": {"img": "23_img/esfp.jpg"},
-            "ESTJ": {"img": "23_img/estj.jpg"},
-            "ESTP": {"img": "23_img/estp.jpg"},
-            
-            "INFJ": {"img": "23_img/infj.jpg"},
-            "INFP": {"img": "23_img/infp.jpg"},
-            "INTJ": {"img": "23_img/intj.jpg"},
-            "INTP": {"img": "23_img/intp.jpg"},
-            
-            "ISFJ": {"img": "23_img/isfj.jpg"},
-            "ISFP": {"img": "23_img/isfp.jpg"},
-            "ISTJ": {"img": "23_img/istj.jpg"},
-            "ISTP": {"img": "23_img/istp.jpg"}
-        }
-        function start() {
-            $(".start").hide();
-            $(".question").show();
-            next();
-        }
-        $("#A").click(function(){
-            var type = $("#type").val();
-            var prevalue = $("#"+type).val();
-            $("#"+type).val(parseInt(prevalue)+1);
-            next();
-        });
-        $("#B").click(function(){
-            next();
-        });
-        function next() {
-            if (num == 13) {
-                $(".question").hide();
-                $(".result").show();
-                var mbti = "";
-                ($("#EI").val() < 2) ? mbti+="I" : mbti+="E";
-                ($("#SN").val() < 2) ? mbti+="N" : mbti+="S";
-                ($("#TF").val() < 2) ? mbti+="F" : mbti+="T";
-                ($("#JP").val() < 2) ? mbti+="P" : mbti+="J";
-                $("#img").attr("src",result[mbti]["img"]);
-                $("#animal").html(result[mbti]["animal"]);
-                $("#explain").html(result[mbti]["explain"]);
-            } else {
-                $(".progress-bar").attr('style','width: calc(100/12*'+num+'%)');
-                $("#title").html(q[num]["title"]);
-                $("#type").val(q[num]["type"]);
-                $("#A").html(q[num]["A"]);
-                $("#B").html(q[num]["B"]);
-                num++;
-            }
-        }
+      }
     </script>
-<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-63e239094555b81f"></script>
-</body>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script
+      type="text/javascript"
+      src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-63e239094555b81f"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
 </html>

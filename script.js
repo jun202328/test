@@ -1,3 +1,4 @@
+// TODO: 이 아래에 원하는 쿠팡링크를 걸어주면 됩니다.
 const COUPANG_LINK = 'https://coupa.ng/bN1X9M';
 
 var adSession = localStorage?.getItem('adSession') ?? null;
@@ -43,7 +44,6 @@ function onCloseBtnClick(e) {
   e.stopPropagation();
 
   if (![...e.target.classList].find(className => className === 'close-btn')) {
-    // TODO: 여기에 쿠팡 링크 변경
     window.open(COUPANG_LINK, '_blank', 'noopener');
   }
 
